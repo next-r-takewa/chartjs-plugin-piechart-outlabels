@@ -13,6 +13,10 @@ export default {
 			};
 		}
 
+		if (typeof Chart === `undefined`) {
+			return;
+		}
+
 		Chart.defaults.outlabeledDoughnut = Chart.defaults.doughnut;
 		Chart.defaults.outlabeledPie = Chart.defaults.pie;
 
