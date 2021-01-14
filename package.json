@@ -11,7 +11,6 @@
   },
   "devDependencies": {
     "gitbook-cli": "^2.3.2",
-    "gulp": "^3.9.1",
     "gulp-eslint": "^3.0.0",
     "gulp-file": "^0.3.0",
     "gulp-rename": "^1.2.2",
@@ -30,5 +29,8 @@
   },
   "peerDependencies": {
     "chart.js": ">= 2.7.0 < 3"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
   }
 }
