@@ -1,5 +1,6 @@
 'use strict';
 
+import Chart from 'chart.js';
 import helpers from './helpers';
 import defaults from './defaults';
 
@@ -11,10 +12,6 @@ export default {
 				v = +v;
 				return (v - v % 1)   ||   (!isFinite(v) || v === 0 ? v : v < 0 ? -0 : 0);
 			};
-		}
-
-		if (typeof Chart === `undefined`) {
-			return;
 		}
 
 		Chart.defaults.outlabeledDoughnut = Chart.defaults.doughnut;
